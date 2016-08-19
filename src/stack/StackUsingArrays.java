@@ -27,26 +27,23 @@ class StackUsingArrays {
     // add data to the top of the stack
     void push(int data) {
             stck[++top] = data;
-            size++;
     }
 
     int pop() {
-        size--;
         return stck[top--];
     }
 
     // print the entire stack
     void traverse() {
         int temp = top;
-        System.out.println("size of the stack : " + size);
         while (temp != -1) {
             System.out.print(stck[temp--] + " | ");
         }
         System.out.println();
-        for (int num : stck) {
-            System.out.print(num + " |  ");
-        }
-        System.out.println();
+        // for (int num : stck) {
+        //     System.out.print(num + " |  ");
+        // }
+        // System.out.println();
     }
 
 }
