@@ -1,3 +1,5 @@
+package linkedList;
+
 class myLinkedList {
 
     // LinkedList need a head and a tail
@@ -68,7 +70,7 @@ class myLinkedList {
      * returns a populated node if found one.
      *
      * @param data : data to delete
-     * @return empty (if head), null (if not found) and Node (if found)
+     * @return empty (if head), null (if not found) and linkedList.Node (if found)
      */
     private Node findNodeBefore(int data) {
         // check for the first element

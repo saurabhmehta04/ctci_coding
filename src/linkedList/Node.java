@@ -1,4 +1,6 @@
-// Node class to represent each node in the LinkedList
+package linkedList;
+
+// linkedList.Node class to represent each node in the LinkedList
 class Node {
     private int data;
     private Node nextNode;
