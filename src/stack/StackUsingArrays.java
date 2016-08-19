@@ -1,20 +1,24 @@
 package stack;
 
 /*
-* Stack implementation using arraylist
+* StackUsingArrays implementation using arrays
+* P.S : Implementing stack using arrays is not efficient as the storage space is not freed
+* when an item is deleted
 * */
-class Stack {
+class StackUsingArrays {
 
     /* Arrays => fixed size √ 
     * Add and remove elements from the array from front or back 
-    * saves the order in which they are added 
+    * saves the order in which they are added
     * */
+
+    //
 
     private int[] stck;
     private int top;
     private int size = 0;
 
-    Stack(int size) {
+    StackUsingArrays(int size) {
         stck = new int[size];
         this.size = size;
         top = -1;
@@ -24,7 +28,6 @@ class Stack {
     void push(int data) {
             stck[++top] = data;
             size++;
-
     }
 
     int pop() {
