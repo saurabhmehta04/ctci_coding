@@ -213,7 +213,7 @@ public class StringManipulation {
         *   if the current char is same as previous
         *       increase the count
         *   else
-        *       add to the list the previous char + count
+        *       push to the list the previous char + count
         *       previous character = the current character in the loop
         *       count = 1 for the current character
         * result += prev + str(count) .. when we reach the end of the loop

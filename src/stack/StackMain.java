@@ -3,14 +3,27 @@ package stack;
 public class StackMain {
 
     public static void main(String[] args) {
-        StackUsingArrays st = new StackUsingArrays(10);
-        st.push(1);
-        st.push(2);
-        st.push(3);
+        StackUsingArrays stck = new StackUsingArrays(5);
+        stck.push(1);
+        stck.push(2);
+        stck.push(3);
+        stck.push(4);
+        stck.push(5);
+        stck.traverse();
+        stck.pop();
+        stck.traverse();
 
-        st.traverse();
+        stck.pop();
+        stck.pop();
+        stck.pop();
+        stck.traverse();
 
-        System.out.println(st.pop());
-        st.traverse();
+        stck.push(3);
+        stck.push(3);
+        stck.push(10);
+        stck.traverse();
+        stck.peek();
+        System.out.println(stck.isEmpty());
+
     }
 }
