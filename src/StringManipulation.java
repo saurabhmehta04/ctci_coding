@@ -72,7 +72,14 @@ public class StringManipulation {
     *
     * */
     private static String urlify(String url, int length) {
-        char[] contents = new char[url.length()];
+
+        String demo = url.replace(" " , "%20");
+        // demo = " ";
+        System.out.println(demo);
+        return demo;
+
+
+        /*char[] contents = new char[url.length()];
         int space = 0;
         for (int i = 0; i < length; i++) {
             if (url.charAt(i) == ' ') {
@@ -87,7 +94,7 @@ public class StringManipulation {
             }
             System.out.println(contents);
         }
-        return new String(contents);
+        return new String(contents);*/
     }
 
     /*
@@ -275,11 +282,11 @@ public class StringManipulation {
     public static void main(String[] args) {
         // System.out.println(isUniqueChars("WorldW"));
         // System.out.println(isPermutable("dog", "god"));
-        // System.out.println(urlify("Mr John Smith    ", 13));
+        System.out.println(urlify("Mr John Smith    ", 13));
         // permute("aabc");
         // compression("aabccccccaaa");
         // System.out.println(oneAway("pale", "bale"));
-        System.out.println(reverseSentence("ram is costly and runtime is O(n)^2"));
+        // System.out.println(reverseSentence("ram is costly and runtime is O(n)^2"));
     }
 
 }

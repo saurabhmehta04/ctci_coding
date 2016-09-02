@@ -15,8 +15,8 @@ class Node<T> {
         this.previousNode = null;
     }
 
-    // Getters and setters for the
-    public T getData() {
+    // Getters and setters
+    T getData() {
         return data;
     }
 
