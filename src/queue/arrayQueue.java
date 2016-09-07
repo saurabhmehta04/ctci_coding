@@ -83,7 +83,7 @@ public class arrayQueue {
         arrayQueue que = new arrayQueue(7);
         que.insert(10);
         que.insert(20);
-        // que.insert(30);
+        que.insert(30);
         // que.insert(40);
         // que.insert(50);
         // que.insert(60);
@@ -98,7 +98,12 @@ public class arrayQueue {
         System.out.println("\n Is Queue Full : " + que.isFull());
 
 
-
+        Hashtable<Integer,String> myTable= new Hashtable<Integer,String>();
+        myTable.put(1, "John");
+        myTable.put(2, "Cena");
+        // myTable.put(3, null); /* NullPointerEcxeption at runtime*/
+        System.out.println(myTable.get(1));
+        System.out.println(myTable.get(2));
 
     }
 }
