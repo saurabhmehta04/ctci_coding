@@ -12,6 +12,7 @@ class Node<T> {
     T data;
     Node<T> next;
     Node<T> previous;
+
     public Node(T data) {
         this.data = data;
         this.next = null;
@@ -94,8 +95,25 @@ class myLinkedList<T> {
             node = node.next;
         }
     }
-}
 
+
+    void removedupsWithoutBuffer() {
+        Node<T> node = head;
+        Node<T> nextNode;
+        while (node != null) {
+            nextNode = node.next;
+            while (nextNode != null) {
+                if (node.data == nextNode.data) {
+                    nextNode.previous.next = nextNode.next;
+                    if (nextNode.next != null) {
+                        nextNode.next.previous = nextNode.previous;
+                    }
+                } nextNode = nextNode.next;
+
+            } node = node.next;
+        }
+    }
+}
 
 
 public class removeDupsLL<T> {
@@ -110,7 +128,8 @@ public class removeDupsLL<T> {
 
         ll.traverse();
         System.out.print("\nRemove Duplicates from LL : ");
-        ll.removedupsWithBuffer();
+        ll.removedupsWithBuffer(); // Time complexity of O(N)
+        // ll.removedupsWithoutBuffer(); // Time complexity of O(N^2)
         ll.traverse();
 
         ll.delete(40);
