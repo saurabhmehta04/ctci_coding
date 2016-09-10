@@ -1,8 +1,5 @@
 package challenges;
 
-/**
- * Created by Falcon on 9/6/16.
- */
 public class nthToLast {
     public static void main(String[] args) {
     /*
@@ -21,6 +18,5 @@ public class nthToLast {
     *
     * }
     * */
-
     }
 }
