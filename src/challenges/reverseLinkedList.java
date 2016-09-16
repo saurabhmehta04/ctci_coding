@@ -51,7 +51,7 @@ public class reverseLinkedList {
         }
     }
 
-    void revLinkedList() {
+    private void revLinkedList() {
         Node temp = null;
         Node node = head;
         while (node != null) {
@@ -65,6 +65,22 @@ public class reverseLinkedList {
     }
 
 
+    Node recursiveReverseList(Node node) {
+        if(node==null || node.nextNode == null)
+            return node;
+
+        //get second node
+        Node second = node.nextNode;
+        //set first's next to be null
+        node.nextNode = null;
+
+        Node rest = recursiveReverseList(second);
+        second.nextNode = node;
+        head = rest;
+        return rest;
+    }
+
+
     public static void main(String[] args) {
         reverseLinkedList ll = new reverseLinkedList();
         ll.add(1);
@@ -73,7 +89,11 @@ public class reverseLinkedList {
         ll.add(4);
         ll.add(5);
         ll.traverse();
+        System.out.print("Reverse iteratively : ");
         ll.revLinkedList();
+        ll.traverse();
+        System.out.print("Reverse Recursively : ");
+        ll.recursiveReverseList(ll.head);
         ll.traverse();
 
     }
