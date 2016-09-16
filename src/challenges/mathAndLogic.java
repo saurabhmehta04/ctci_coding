@@ -37,11 +37,26 @@ public class mathAndLogic {
         return true; // if prime
     }
 
+    /*
+    * function to print prime numbers from 1 to 100
+    * */
+    static void primetill100() {
+        //catching the prime numbers from 1 to 100
+        int n = 100;
+        for(int i = 2; i < 100; i++) {
+            for (int j = i+1; j < 100; j++) {
+                if (i % j == 0) {
+                    System.out.print(i);
+                }
+            }
+        }
+    }
+
     public static void main(String[] args) {
         int n = (int) Math.sqrt(21);
         System.out.println(n);
         System.out.println(isPrime(81));
         System.out.println(isPrimeModern(81));
-
+        primetill100();
     }
 }
