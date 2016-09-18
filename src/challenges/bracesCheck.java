@@ -1,5 +1,6 @@
 package challenges;
 
+import java.util.Scanner;
 import java.util.Stack;
 
 public class bracesCheck {
@@ -17,15 +18,30 @@ public class bracesCheck {
                 else stck.push(str.charAt(j)); // ( {
             }
             bool[i] = (stck.empty()) ? "YES" : "NO";
+
+            //if the previous string is not balanced, there would be element in the stck, so empty out the stck
+            while (!stck.empty()) {
+                stck.pop();
+            }
         }
         return bool;
     }
 
     public static void main(String[] args) {
-        String[] values = {"[]{}()", "({[]})", "()(()))"};
+        /*Scanner in = new Scanner(System.in);
+        int t = in.nextInt();
+        String s[] = new String[t];
+        for(int a0 = 0; a0 < t; a0++){
+            s[a0] = in.next();
+        }
+        System.out.println("t : " + t);
+        for (String str : s) {
+            System.out.println(str);
+        }*/
+        String[] values = {"{[()]}", "{[(])}", "{{[[(())]]}}", "}}}"};
         String[] bool = Braces(values);
         for (String str : bool) {
-            System.out.print(str + " ");
+            System.out.println(str);
 
         }
     }
