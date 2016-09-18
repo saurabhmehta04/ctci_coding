@@ -57,8 +57,7 @@ public class stringCompression {
         for (char element : charArray) {
             if (prev == element) {
                 counter++;
-            }
-            else {
+            } else {
                 stringBuilder.append(prev);
                 stringBuilder.append(counter);
                 prev = element;
@@ -72,14 +71,75 @@ public class stringCompression {
         System.out.println(stringBuilder);
 
     }
+    /*
+     * Complete the function below.
+     */
+
+    static String compress(String str) {
+        int counter = 0;
+        String result = "";
+        ArrayList<Character> objList = new ArrayList<Character>();
+        for (int i = 0; i < str.length(); i++) { //aabbbbcc
+            char currentChar = str.charAt(i); // a
+
+            // check if the next character exist
+            if (!objList.contains(currentChar)) {
+                // char nextChar = str.charAt(i);
+                for (int j = i; j < str.length(); j++) { // o - length
+                    if (currentChar == str.charAt(j)) { // a == a
+                        counter++;  // 1
+                    }
+                }
+                objList.add(currentChar);
+                if (counter == 1) {
+                    result = result + currentChar;
+                } else {
+                    result = result + currentChar + "" + counter;
+                }
+            }
+            counter = 0;
+        }
+
+        return result;
+
+    }
+
+    /*
+    * Function to print all the unique characters with their count
+    * ex: aabbaacc => a4b2c2s*/
+
+    static String compressString(String string) {
+
+        String result = "";
+        ArrayList<Character> arrayList = new ArrayList<>(); //ab
+        int stringLength = string.length();
+        int counter = 0; // 2
+        for (int i = 0; i < stringLength; i++) { // aabbaacc
+            char currentChar = string.charAt(i); // b 2
+
+            // each character to compare with the rest
+            if (!arrayList.contains(currentChar)) {
+                arrayList.add(currentChar); // if arraylist does not contain the element, add to it
+                for (int j = i; j < stringLength; j++) { // loop through to get the count 3
+                    if (string.charAt(j) == currentChar) {
+                        counter ++;
+                    }
+                }
+                result = result + currentChar + counter; // a4b2
+                counter = 0;
+            }
+        }
+        return result;
+    }
+
 
     public static void main(String[] args) {
         System.out.print("Enter your string :  ");
         Scanner scan = new Scanner(System.in);
         String str = scan.nextLine(); //aabaaaaccc
 
-        stringCompression(str);
-        stringCompressionEfficient(str);
-
+        // stringCompression(str);
+        // stringCompressionEfficient(str);
+        System.out.println(compressString(str));
     }
 }

@@ -29,46 +29,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="mathAndLogic.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/challenges/mathAndLogic.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="870">
-              <caret line="58" column="46" selection-start-line="58" selection-start-column="46" selection-end-line="58" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reverseLinkedList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/challenges/reverseLinkedList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StringManipulation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/StringManipulation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1063">
-              <caret line="241" column="39" selection-start-line="241" selection-start-column="39" selection-end-line="241" selection-end-column="39" />
-              <folding>
-                <marker date="1472444298000" expanded="true" signature="2634:3184" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="stringCompression.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/challenges/stringCompression.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="51" column="6" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="6" />
+            <state relative-caret-position="530">
+              <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
               <folding>
                 <element signature="docComment;class#stringCompression#0" expanded="true" />
                 <element signature="e#428#441#0" expanded="true" />
+                <element signature="e#2249#2260#0" expanded="true" />
+                <element signature="e#4291#4317#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -124,9 +94,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
     <option name="width" value="1920" />
-    <option name="height" value="1143" />
+    <option name="height" value="1200" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -239,6 +208,7 @@
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -762,7 +732,8 @@
       <workItem from="1474063762073" duration="221000" />
       <workItem from="1474141321079" duration="195000" />
       <workItem from="1474218296471" duration="3600000" />
-      <workItem from="1474222842273" duration="2057000" />
+      <workItem from="1474222842273" duration="2103000" />
+      <workItem from="1474225174787" duration="1771000" />
     </task>
     <task id="LOCAL-00001" summary="LinkedList - update">
       <created>1471619187310</created>
@@ -869,11 +840,18 @@
       <option name="project" value="LOCAL" />
       <updated>1474224356156</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="challenge : string compression(efficient)">
+      <created>1474224916958</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1474224916958</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62970000" />
+    <option name="totallyTimeSpent" value="64787000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -885,7 +863,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1143" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -895,8 +873,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25916666" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26546147" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921028" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -929,17 +907,17 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4034253" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3996194" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921028" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3075" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26546147" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26548672" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921028" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.184375" sideWeight="0.49666667" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18423855" sideWeight="0.49666667" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19791667" sideWeight="0.50333333" order="2" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
@@ -970,7 +948,8 @@
     <MESSAGE value="challenge : reverse LinkedList" />
     <MESSAGE value="challenge : reverse LinkedList recursively" />
     <MESSAGE value="challenge : string compression" />
-    <option name="LAST_COMMIT_MESSAGE" value="challenge : string compression" />
+    <MESSAGE value="challenge : string compression(efficient)" />
+    <option name="LAST_COMMIT_MESSAGE" value="challenge : string compression(efficient)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1309,10 +1288,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/challenges/mathAndLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1682">
+          <caret line="58" column="46" selection-start-line="58" selection-start-column="46" selection-end-line="58" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/StringManipulation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1063">
-          <caret line="241" column="39" selection-start-line="241" selection-start-column="39" selection-end-line="241" selection-end-column="39" />
+        <state relative-caret-position="268">
+          <caret line="215" column="10" selection-start-line="215" selection-start-column="10" selection-end-line="215" selection-end-column="10" />
           <folding>
             <marker date="1472444298000" expanded="true" signature="2634:3184" ph="..." />
           </folding>
@@ -1321,27 +1308,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/challenges/reverseLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
+        <state relative-caret-position="696">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/challenges/mathAndLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="58" column="46" selection-start-line="58" selection-start-column="46" selection-end-line="58" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/challenges/stringCompression.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="51" column="6" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="6" />
+        <state relative-caret-position="530">
+          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#stringCompression#0" expanded="true" />
             <element signature="e#428#441#0" expanded="true" />
+            <element signature="e#2249#2260#0" expanded="true" />
+            <element signature="e#4291#4317#0" expanded="true" />
           </folding>
         </state>
       </provider>
