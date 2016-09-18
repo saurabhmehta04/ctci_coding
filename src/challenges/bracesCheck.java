@@ -28,20 +28,17 @@ public class bracesCheck {
     }
 
     public static void main(String[] args) {
-        /*Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
         int t = in.nextInt();
         String s[] = new String[t];
         for(int a0 = 0; a0 < t; a0++){
             s[a0] = in.next();
         }
-        System.out.println("t : " + t);
-        for (String str : s) {
-            System.out.println(str);
-        }*/
-        String[] values = {"{[()]}", "{[(])}", "{{[[(())]]}}", "}}}"};
-        String[] bool = Braces(values);
+        // String[] values = {"{[()]}", "{[(])}", "{{[[(())]]}}", "}}}"};
+        String[] bool = Braces(s);
+        System.out.print("Balanced : ");
         for (String str : bool) {
-            System.out.println(str);
+            System.out.print(str + " ");
 
         }
     }
