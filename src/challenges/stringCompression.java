@@ -10,11 +10,7 @@ import java.util.Scanner;
 public class stringCompression {
 
 
-    static void stringCompression() {
-        System.out.print("Enter your string :  ");
-
-        Scanner scan = new Scanner(System.in);
-        String str = scan.nextLine(); //aabaaaaccc
+    private static void stringCompression(String str) {
         char charArray[] = str.toCharArray();
 
         ArrayList<Character> compressedArray = new ArrayList<>(); // a
@@ -52,11 +48,38 @@ public class stringCompression {
     }
 
 
+    private static void stringCompressionEfficient(String str) {
+        char[] charArray = str.toCharArray();
+        StringBuilder stringBuilder = new StringBuilder();
+        int counter = 0;
+        char prev = str.charAt(0);
 
+        for (char element : charArray) {
+            if (prev == element) {
+                counter++;
+            }
+            else {
+                stringBuilder.append(prev);
+                stringBuilder.append(counter);
+                prev = element;
+                counter = 1;
+            }
+        }
+        // adding the last element
+        stringBuilder.append(prev);
+        stringBuilder.append(counter);
+
+        System.out.println(stringBuilder);
+
+    }
 
     public static void main(String[] args) {
-        stringCompression();
+        System.out.print("Enter your string :  ");
+        Scanner scan = new Scanner(System.in);
+        String str = scan.nextLine(); //aabaaaaccc
 
+        stringCompression(str);
+        stringCompressionEfficient(str);
 
     }
 }
