@@ -18,8 +18,7 @@ public class bracesCheck {
                 else stck.push(str.charAt(j)); // ( {
             }
             bool[i] = (stck.empty()) ? "YES" : "NO";
-
-            //if the previous string is not balanced, there would be element in the stck, so empty out the stck
+            //if the previous string is not balanced, there would be element(s) in the stck, so empty out the stck
             while (!stck.empty()) {
                 stck.pop();
             }
