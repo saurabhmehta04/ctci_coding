@@ -1,6 +1,8 @@
 package challenges;
 
+import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
 import java.util.Stack;
 
 public class bracesCheck {
@@ -27,18 +29,27 @@ public class bracesCheck {
     }
 
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        int t = in.nextInt();
-        String s[] = new String[t];
-        for(int a0 = 0; a0 < t; a0++){
-            s[a0] = in.next();
-        }
-        // String[] values = {"{[()]}", "{[(])}", "{{[[(())]]}}", "}}}"};
-        String[] bool = Braces(s);
-        System.out.print("Balanced : ");
-        for (String str : bool) {
-            System.out.print(str + " ");
+        // Scanner in = new Scanner(System.in);
+        // int t = in.nextInt();
+        // String s[] = new String[t];
+        // for(int a0 = 0; a0 < t; a0++){
+        //     s[a0] = in.next();
+        // }
+        // // String[] values = {"{[()]}", "{[(])}", "{{[[(())]]}}", "}}}"};
+        // String[] bool = Braces(s);
+        // System.out.print("Balanced : ");
+        // for (String str : bool) {
+        //     System.out.print(str + " ");
+        //
+        // }
 
+        int[] arr = {1,1,2,3,0,0,0,0,0};
+        Set<Integer> set = new HashSet<>();
+        for (int i = 0; i < arr.length; i++) {
+            set.add(arr[i]);
         }
+        System.out.println(arr.length);
+        System.out.println(set.size());
+
     }
 }

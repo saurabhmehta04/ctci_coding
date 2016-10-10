@@ -134,7 +134,7 @@ public class staicase{
         // String[] str = {"students", "stairs", "saurabh", "tom"};
         // demo(str);
         String str = "hpangeiugensdhgpgcnrfnbqsktkdogndjalniftmvnrcuikyvbdkeueqnoubxhgghrvrzofueyyagiydlbppvuik";
-        int n = 36;
+        int n = 10;
         printStaircase(n);
         System.out.println();
         System.out.println("String length : " + str.length());
